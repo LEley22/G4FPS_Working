@@ -1,0 +1,29 @@
+/vis/open OGL
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/drawVolume
+/vis/scene/add/trajectories smooth
+/vis/viewer/set/style wireframe
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/scale 10 cm 
+/vis/scene/add/axes
+/vis/scene/add/eventID
+
+#/vis/geometry/set/forceSolid detLogic
+#/vis/geometry/set/colour detLogic 0 1 0 0 .5
+
+#/vis/geometry/set/forceSolid TargetLogic
+#/vis/geometry/set/colour TargetLogic 0 0 1 0 .5
+
+#/vis/geometry/set/forceSolid SteelLogic
+#/vis/geometry/set/colour SteelLogic 0 0 0 1 .5
+
+#/vis/geometry/set/forceSolid AlLogic
+#/vis/geometry/set/colour AlLogic 0 0 0 1 .5
+
+#/vis/geometry/set/forceSolid OilLogic
+#/vis/geometry/set/colour OilLogic 0 1 0 0 .5
+
+#/vis/geometry/set/forceSolid TiLogic
+#/vis/geometry/set/colour TiLogic 0 0 1 0 .5
+
+/vis/scene/endOfEventAction accumulate 10
